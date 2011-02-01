@@ -1,0 +1,190 @@
+/*----------------------------------------------------------------------------
+ GLOBAL
+----------------------------------------------------------------------------*/
+body {
+	background-color: #F1F1F1;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+em {
+	font-style: italic;
+}
+p {
+	width: 100%;
+}
+
+h1 {
+	margin: 1em auto;
+	font-size:1.6em;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 1em auto;
+	font-size:1.4em;
+	font-weight: bold;
+}
+
+#wrapper {
+	min-width: 1024px;
+	margin: 0 auto;
+}
+/*----------------------------------------------------------------------------
+ NAVIGATION BAR
+----------------------------------------------------------------------------*/
+#navbar {
+	padding: 7px;
+	background: url('../img/bg-menu.gif') repeat-x 0 0 #292929;
+}
+
+#navbar ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+#navbar li {
+	display: inline;
+	padding: 20px;
+	font-size: 0.8em;
+	font-family: helvetica, arial, sans-serif;
+}
+
+#navbar a:link, a:visited {
+	text-decoration: none;
+	color: #C1C1C1;
+}
+
+#navbar li:hover {
+	font-weight: bolder;
+}
+
+/*----------------------------------------------------------------------------
+ HEADER
+----------------------------------------------------------------------------*/
+#header {
+	background: url('../img/bg-header.png') repeat-x 0 0 #FFFFFF;
+	height:150px;
+}
+
+#tagline {
+	position: absolute;
+	top:50px;
+	left:500px;
+	color: #FFF;
+	font-size: 2em;
+	font-style: italic;
+}
+/*----------------------------------------------------------------------------
+ MAIN SECTIONS
+----------------------------------------------------------------------------*/
+#main {
+	padding: 3em 20%;
+}
+
+#column_1 {
+	float: left;
+	width: 400px;
+	margin: 60px 100px 60px 15%;
+}
+
+#column_2 {
+	float: left;
+	width: 300px;
+	margin-top: 60px;
+/*	padding: 1em 1em;*/
+}
+
+#main, #column_1, #column_2 {
+/*	font-family: georgia, "Times New Roman";*/
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+	color: #515151;
+}
+
+#main h1, #main h2, #column_1 h2 {
+	color: blue;
+	font-style: italic;
+}
+
+#column_2 img {
+	margin-bottom: 4em;
+}
+
+#main a {
+	text-decoration: none;
+	color: #515151;
+}
+
+#main span {
+	color: #bbb;
+	text-align: left;
+	font-family: 'Times New Roman', georgia, serif;
+	line-height: 2em;
+	font-size: 2em;
+	font-weight: bolder;
+/*	overflow: hidden;*/
+	padding: 1em 1em;
+}
+/*----------------------------------------------------------------------------
+ QUOTES
+----------------------------------------------------------------------------*/
+#quotes {
+	clear:both;
+	margin-top: 4em;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+}
+
+#quotes h2 {
+	font-family:"Lucida Grande";
+}
+
+#quotes_list {
+	margin: 2em 30%;
+	color: #515151;
+}
+
+#quotes_list .quote {
+	font-style: italic;
+	font-size: 22px;
+}
+
+#quotes_list .author {
+	color: #000;
+	font-size: 14px;
+	padding-top: 1em;
+	padding-bottom: 3em;
+}
+
+/*----------------------------------------------------------------------------
+ IMC
+----------------------------------------------------------------------------*/
+input {
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------
+ FOOTER
+----------------------------------------------------------------------------*/
+#footer {
+	font-family: Arial;
+	clear: both;
+	padding-bottom: 1em;
+	color: gray;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+#footer #social {
+	margin: 10px 0px;
+}
