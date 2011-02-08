@@ -71,6 +71,10 @@ h2 {
 	height:150px;
 }
 
+h1#title {
+	visibility: hidden;
+}
+
 #tagline {
 	position: absolute;
 	top:50px;
