@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
     <head>
-    	<title>Antares Mejoramiento Corporal | Servicios a distancia</title>
+    	<title>Antares Mejoramiento Corporal | Índice de Masa Corporal</title>
     	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     	<link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -11,6 +11,7 @@
         <link rel="icon" type="image/png" href="favicon.png" />
         
         <script type="text/javascript" src="js/external.js"></script>
+        <script type="text/javascript" src="js/calculadora.js"></script>
 	</head>
 
 	<body>
@@ -32,39 +33,57 @@
     			</ul>
     		</div>
 
-            <div id="main">
-
+    		<div id="column_1">
+    			<h2>
+    			    ¿Qué es el Índice de Masa Corporal?
+    			</h2>
     			<p>
-    			    <strong>
-                    No importa si estás en Caracas o vives en la Gran Sabana. En
-                    Antares Mejoramiento Corporal podemos atenderte y ayudarte
-                    por igual a bajar de peso y conseguir una apariencia
-                    saludable.
-                    </strong>
-                </p>
-                <p>
-                    Gracias al Programa de Adelgazamiento Antares, no hacen
-                    falta visitas ni chequeos periódicos en nuestras oficinas.
-                    Al empezar el programa te enviaremos todo el material
-                    necesario para que bajes de peso y podrás contar con la
-                    asistencia de nuestro equipo por correo electrónico,
-                    twitter, facebook o nuestros teléfonos.
+    			    El índice de masa corporal (IMC) es una medida de
+    			    asociación entre el peso y la talla de una persona. Ideado
+    			    por el estadístico belga L.A.J. Quetelet, también es
+    			    conocido como índice de Quetelet. Aunque la fórmula para
+    			    calcular es:
+    			</p>
+    			<p>
+    			    IMC = peso (kg) / estatura2(m)
+    			</p>
+    			<p>
+    			    El valor resultante también considera la edad y sexo de la
+    			    persona para el diagnóstico final.
     			</p>
     			<h2>
-                    ¿Qué incluye el Programa a distancia?
+    			    ¿Por qué es importante el IMC?
     			</h2>
-    			<ul>
-                    <li>CD explicativo del Programa Antares.</li>
-                    <li>4 semanas del tratamiento adelgazante con las cápsulas "devora-grasas".</li>
-                    <li>Material teórico (por escrito) con el Programa y recomendaciones generales para bajar de peso de forma saludable.</li>
-                    <li>Asistencia telefónica ilimitada.</li>
-    			</ul>
-                <br />
     			<p>
-                    No esperes más, llama al (0212) 943.24.24 para solicitar el
-                    material a distancia y comienza a perder peso desde ya.
+    			    El IMC es un indicador de la grasa corporal en la persona.
+    			    Además de mantener un nivel de grasa corporal adecuado por
+    			    fines estéticos, es muy importante controlar dicho nivel
+    			    debido a su relación con el riesgo de padecer enfermedades
+    			    cardiovasculares y otros transtornos metabólicos como la
+    			    diabetes.
     			</p>
-            </div>
+    		</div>
+
+            <div id="column_2">
+    			<label for="altura">Tu altura (en centímetros):</label>
+    			<input type="text" id="altura" maxlength="5" /><br />
+    			
+    			<label for="peso">Tu peso (en kilogramos):</label>
+    			<input type="text" id="peso" maxlength="5" />
+
+                <br />
+    			<input type="button" name="button" id="botton" value="Calcular" onclick="getIMC()" />
+
+                <br />
+                <br />
+
+                <div id="resultado" style="display:none">
+                </div>
+    			<div id="imc">
+    			</div>
+    			<div id="veredicto">
+    			</div>
+    		</div>
 
     		<div id="footer">
     			<p>
