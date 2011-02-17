@@ -34,61 +34,60 @@
     			</ul>
     		</div>
 
-    		<div id="column_1">
-    			<h2>
-    			    ¿Qué es el Índice de Masa Corporal?
-    			</h2>
-    			<p>
-    			    El índice de masa corporal (IMC) es una medida de
-    			    asociación entre el peso y la talla de una persona. Ideado
-    			    por el estadístico belga L.A.J. Quetelet, también es
-    			    conocido como índice de Quetelet. Aunque la fórmula para
-    			    calcular es:
-    			</p>
-    			<p>
-    			    IMC = peso (kg) / estatura2(m)
-    			</p>
-    			<p>
-    			    El valor resultante también considera la edad y sexo de la
-    			    persona para el diagnóstico final.
-    			</p>
-    			<h2>
-    			    ¿Por qué es importante el IMC?
-    			</h2>
-    			<p>
-    			    El IMC es un indicador de la grasa corporal en la persona.
-    			    Además de mantener un nivel de grasa corporal adecuado por
-    			    fines estéticos, es muy importante controlar dicho nivel
-    			    debido a su relación con el riesgo de padecer enfermedades
-    			    cardiovasculares y otros transtornos metabólicos como la
-    			    diabetes.
-    			</p>
-    		</div>
-
-            <div id="column_2">
-    			<label for="altura">Tu altura (en centímetros):</label>
-    			<input type="text" id="altura" maxlength="5" /><br />
-    			
-    			<label for="peso">Tu peso (en kilogramos):</label>
-    			<input type="text" id="peso" maxlength="5" />
-
-                <br />
-    			<input type="button" name="button" id="botton" value="Calcular" onclick="getIMC()" />
-
-                <br />
-                <br />
-
-                <div id="resultado" style="display:none">
+            <div id="main">
+                <div id="column_1">
+                    <h2>
+                        ¿Qué es el Índice de Masa Corporal?
+                    </h2>
+                    <p>
+                        El índice de masa corporal (IMC) es una medida de
+                        asociación entre el peso y la talla de una persona.
+                        Ideado por el estadístico belga L.A.J. Quetelet, también
+                        es conocido como índice de Quetelet. Aunque la fórmula
+                        para calcular es:
+                    </p>
+                    <p>
+                        IMC = peso (kg) / estatura2(m)
+                    </p>
+                    <p>
+                        El valor resultante también considera la edad y sexo de
+                        la persona para el diagnóstico final.
+                    </p>
+                    <h2>
+                        ¿Por qué es importante el IMC?
+                    </h2>
+                    <p>
+                        El IMC es un indicador de la grasa corporal en la
+                        persona. Además de mantener un nivel de grasa corporal
+                        adecuado por fines estéticos, es muy importante
+                        controlar dicho nivel debido a su relación con el riesgo
+                        de padecer enfermedades cardiovasculares y otros
+                        transtornos metabólicos como la diabetes.
+                    </p>
                 </div>
-    			<div id="imc">
-    			</div>
-    			<div id="veredicto">
-    			</div>
-    		</div>
 
-    		<div id="footer">
-    			<p>
-    			    © Copyright 2011 Antares Mejoramiento Corporal. Todos los
+                <div id="column_2">
+                    <label for="altura">Tu altura (en centímetros):</label>
+                    <input type="text" id="altura" maxlength="5" /><br />
+    			
+                    <label for="peso">Tu peso (en kilogramos):</label>
+                    <input type="text" id="peso" maxlength="5" />
+                    <br />
+                    <input type="button" name="button" id="botton" value="Calcular" onclick="getIMC()" />
+                    <br />
+                    <br />
+                    <div id="resultado" style="display:none">
+                    </div>
+                    <div id="imc">
+                    </div>
+                    <div id="veredicto">
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <p>
+                    © Copyright 2011 Antares Mejoramiento Corporal. Todos los
     			    derechos reservados.
     			</p>
     			<!--p>
